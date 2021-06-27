@@ -1,0 +1,406 @@
+
+/* navbar start **/
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    margin:0;
+}
+
+h2{
+    font-family: 1.5rem;
+    text-align: center;
+    color:white;
+}
+.about-hr{
+    border: dotted 6px white;
+    border-top: none;
+    margin: 20px auto;
+    width:300px
+}
+.nav-heading h1{
+    color:white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+a{
+    color:white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+p{
+    font-size: 2rem;
+    text-align: justify;
+    text-align: center;
+}
+
+
+
+[class*="col-"]{
+    width:100%;
+}
+
+.navbar{
+    background-color: #0c6158;
+    padding:1% 7%;
+    text-align: center;
+}
+.nav-logo{
+    color:white;
+    font-size: 7rem;
+    
+}
+
+.nav-h1{
+    color:white;
+    margin: 0;
+    padding-top: 10px;
+}
+.nav-menu{
+    display:flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.navbar::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+
+
+.nav-menu a{
+    background-color: #40868b;
+
+    
+    margin:7px 0px;
+    padding:10px 5px;
+    border-radius: 10px;
+    
+
+}
+.nav-menu a:hover{
+    background-color: gray;
+
+
+}
+/*  navbar End  */
+
+
+
+
+
+
+
+/*  profile start */
+.profile{
+    padding:130px 10px;
+    position:relative;
+    text-align: center;
+}
+.profile .top-weather-icon{
+    position:absolute;
+    right:20px;
+    
+    top:30px;
+    height:100px;
+    transition: transform 2s;
+}
+.profile .top-weather-icon:hover{
+    transform: rotate(360deg);
+}
+ 
+.profile-desc h1{
+    font-family:'Satisfy', cursive;
+    font-size: 3rem;
+    
+
+}
+
+
+.profile-desc h1:hover{
+     transform: rotate(360deg);
+}
+
+.profile-desc p{
+    color:gray;
+    text-align:center;
+    
+    transition: transform 2s;
+
+
+}
+
+
+
+.profile .bottom-weather-icon{
+    position:absolute;
+    left:20px;
+    bottom:20px;
+    
+    height:100px;
+    transition: transform 2s;
+}
+.profile .bottom-weather-icon:hover{
+    transform: rotate(360deg);
+}
+
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/*  profile End */
+
+
+
+
+/* about start */
+.about-me{
+    background-color: #39a4ac;
+    padding:1% 7%;
+    color:white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.aboutme-image1{
+    width:300px;
+    height: 400px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+.button{
+    text-align: center;
+    background-color: black;
+    padding:20px 20xp;
+    color:white;
+    font-size: 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.about-me::after{
+    clear:both;
+    display: table;
+    content:'';
+}
+/* about End */
+
+
+/* profexxional-experience starts */
+.professional-experience{
+    padding:1px 1px;
+}
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    width:100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 50px;
+    
+}
+.rounded-img{
+    border: 5px solid white;
+    padding:10px;
+    border-radius: 50px;
+
+}
+
+.professional-experience .card{
+    background-color: #a39e9e;
+    border-radius: 5px;
+    padding:10px;
+    transition:0.3s;
+    height: 800px;
+    margin: 20px 10px;
+    box-shadow: 5px 5px 5px black;
+    
+}
+.card:hover{
+    box-shadow: 4px 8px 5px green;
+}
+
+
+
+.card-title h2{
+    background-color: #616161;
+    color:white;
+    padding:10px;
+}
+
+
+
+.skills-contaimer{
+    padding:45px;
+}
+
+.skills-contaimer li{
+    list-style: none;
+    font-weight: bolder;
+    margin:25px 0px;
+    position:relative;
+    text-transform: uppercase;
+}
+
+.skills-contaimer li::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:10px;
+    top: calc(100% + 5px);
+    
+
+    background-color:white;
+    border-radius: 10px;
+}
+
+.skills-contaimer li::after{
+    content:'';
+    position:absolut;
+    width:0;
+    height:10px;
+    top: calc(100% + 5px);
+    
+
+    background-color:red;
+    border-radius: 10px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  
+}
+.skills-contaimer li.html::after{
+    animation-name:html;
+}
+
+@keyframes html{
+    to{
+        width:90%;
+    }
+}
+
+
+.skills-contaimer li.css::after{
+    animation-name:html;
+}
+
+@keyframes css{
+    to{
+        width:50%;
+    }
+}
+
+.professional-experience::after{
+    clear:both;
+    display: table;
+    content:'';
+}
+/* profexxional-experience End */
+
+
+
+
+/* achievement-contact starts */
+
+.achievmnet-contact{
+    padding:1% 7%;
+    background-color: #39a4ac;
+}
+
+.contact{
+    padding:1% 2%;
+    text-align:center;
+}
+
+.contact input, textarea{
+    width:100%;
+    padding:10px;
+    font-size: 1rem;
+    text-align: center;
+    border:none;
+    border-radius: 5px;
+}
+.contact button{
+    border:none;
+    padding:10px;
+    border-radius: 12px;
+    margin:10px 20px;
+    background-color: indigo;
+    color:white;
+    cursor: pointer;
+}
+
+
+.contact-list{
+    text-align: center;
+}
+.media-cm .btn{
+    border-radius:25px;
+    border:none;
+    cursor: pointer;
+    font-size: 32px;
+    padding:10px;
+    margin:10px;
+    width:50px;
+    
+    height:50px;
+}
+.btn:hover{
+    background-color: gray;
+}
+
+
+
+
+.achievmnet-contact::after{
+    clear:both;
+    display: table;
+    content:'';
+}
+/* achievement-contact starts */
+
+/* footer start  */
+.footer{
+    background-color: black;
+    color:white;
+    padding:20px;
+    text-align: center;
+    font-size:1rem;
+}
+
+
+.footer a{
+    display: block;
+    padding:5px 10px;
+}
+
+.footer a:hover{
+   color:gray;
+}
+.love{
+    color:red;
+    font-size:1.5rem;
+}
+
+.footer::after{
+    display:table;
+    clear: both;
+    content:'';
+}
+
+
+
+/* footer End  */
+
+
+
+
+
+
+

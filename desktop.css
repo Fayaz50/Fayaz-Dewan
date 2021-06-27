@@ -1,0 +1,139 @@
+/*   navbar start ***/
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+    float: left;
+}
+
+.nav-logo{
+    color:white;
+    text-align:left;
+    font-size: 7rem;
+   
+ 
+
+}
+.nav-heading{
+    
+
+}
+.nav-menu{
+    flex-direction: row;
+    padding:5px 10px;
+    justify-content: flex-end;
+}
+.nav-menu a{
+    
+    padding:5px 10px;
+    margin: 70px 0px;
+    background-color: transparent;
+
+    
+}
+/*  navbar End     */
+
+
+
+
+
+
+/* prodile start */
+.profile .top-weather-icon{
+    position:absolute;
+    right:120px;
+    
+    top:70px;
+    height:150px;
+    transition: width 3s,transform 2s;
+}
+.profile .top-weather-icon:hover{
+    transform: rotate(360deg);
+    width:180px;
+}
+
+
+.profile .bottom-weather-icon{
+    position:absolute;
+    left:120px;
+    
+    
+    height:150px;
+    transition: width 3s, transform 2s;
+}
+.profile .bottom-weather-icon:hover{
+    transform: rotate(360deg);
+}
+
+/* prodile end */
+
+
+
+/* about me start */
+.aboutme-image1{
+    height: 400px;
+    width: 300px;
+    margin-top: 300px;
+    margin-right: 300px;
+}
+.aboutme-desc p{
+    text-align: left;
+}
+
+/* about me end */
+
+
+
+
+/* achievement-contact starts */
+.contact button{
+    border:none;
+    padding:10px;
+    border-radius: 12px;
+    margin:10px 20px;
+    background-color: indigo;
+    color:white;
+    cursor: pointer;
+    width:105px;
+    
+}
+.contact-list{
+    text-align: center;
+    position:relative;
+}
+.media-cm{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%);
+    top:100px;
+
+
+}
+
+
+/* achievement-contact End*/
+
+/* footer start */
+.footer-menu{
+    
+}
+
+.footer-menu a{
+    display: inline;
+}
+/* footer End */
+
